@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TravelPal-Vietnam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide">TravelPal</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+          <a href="meals.html" class="w3-bar-item w3-button">MEALS</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">MEALS</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Vietnam</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Vietnam</span><br>
+    <span class="w3-large">"A Timeless Charm"</span>
+  </div> 
+</header>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Vietnam A Timeless Charm</h3>
+      <p>Vietnam in south-eastern Asia is arguably one of the most beautiful countries on the continent. Known for its natural beauty and abundance of natural attractions such as the vast paddy fields, limestone islands in Halong Bay or the massive cave system in Phong Nha Ke Bang National Park, the country provides quite an unmatched experience. On the other hand, moulded by its turbulent and war-torn history, Vietnam today is a distant shadow of its past with the cities and towns brimming with tall and looming skyscrapers, quaint floating markets and mopeds zooming through the roads. Add to that the ever-delightful authentic Vietnamese cuisine which is fast gaining popularity around the world and you have a wholesome experience like no other.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="vn.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- interesting places Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">INTERESTING PLACES</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://vietnam.travel/places-to-go/southern-vietnam/ho-chi-minh-city" target="_blank"><img src="vn2.webp" alt="John" style="width:100%"></a>
+        <div class="w3-container" style="border-radius: 20px;">
+          <h3>Ho Chi Minh City</h3>
+          <p>Vibrating with energy, innovation and traffic – lots of traffic – Ho Chi Minh City, formerly known as Saigon, is the economic heart of Vietnam and the main hub of the southern region. A freewheeling, cosmopolitan metropolis, HCMC's dynamic cityscape draws together old and new Vietnam in the most compact of spaces, representing the city’s past as well as its future.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://vietnam.travel/places-to-go/central-vietnam/phong-nha" target="_blank"><img src="phongnha.jpg" alt="Jane" style="width:100%"></a>
+        <div class="w3-container">
+          <h3>Phong Nha</h3>
+          <p>Not long ago the sleepy village of Phong Nha barely got a mention in guidebooks, but the surprise discovery of one of the world's largest caves has catapulted it into the adventure tourism spotlight. The Phong Nha-Kẻ Bàng National Park is a rugged swathe of limestone mountains riddled with gigantic caves. It's also home to endangered wildlife and ethnic minority groups.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://vietnam.travel/places-to-go/northern-vietnam/ha-long" target="_blank"><img src="halong.jpg" alt="Mike" style="width:100%"></a>
+        <div class="w3-container">
+          <h3>Ha Long</h3>
+          <p>For many, the seascape of Ha Long Bay is synonymous with Vietnam. Cruises sail emerald green waters among thousands of rugged islands and islets, stopping at spectacular caves through which visitors can wander, viewing impressive, centuries-old formations. Ha Long Bay's mystical beauty has made it a bucket list attraction within the country.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://vietnam.travel/places-to-go/central-vietnam/da-nang" target="_blank"><img src="danang.webp" alt="Dan" style="width:100%"></a>
+        <div class="w3-container">
+          <h3>Da Nang</h3>
+          <p>With broad beaches, fantastic street food, the fabled Hai Van Pass, and a growing collection of cafes, restaurants, and bars, it’s no wonder the residents of Da Nang sport some of the broadest smiles in the country. The warm sands of My Khe Beach sweep south from the mountainous Son Tra Peninsula. Da Nang hosts some of Vietnam's top luxury resorts, playground, gym, and source of livelihood.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://vietnam.travel/places-to-go/central-vietnam/hoi-an" target="_blank"><img src="hoian.webp" alt="Dan" style="width:100%"></a>
+        <div class="w3-container">
+          <h3>Hoi An</h3>
+          <p>Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay. Outside the Old Town, two-lane roads slice through waving rice fields and emerge at a frothy coastline. Hoi An's easygoing beauty and lantern-lit nights may leave you hopelessly beguiled.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px;">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+<main>
+  <p>Type the name of a city to find out the weather conditions</p>
+  <ul>
+    <li>Ho Chi Minh City</li>
+    <li>Phong Nha</li>
+    <li>Ha Long</li>
+    <li>Da Nang</li>
+    <li>Hoi An</li>
+  </ul>
+  <form method="POST" id="weatherForm">
+      <input type="text" id="city" placeholder="City Name" />
+      <input id="postSubmit" type="submit" value="Submit" />
+  </form>
+</main>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script src="functions.js"></script>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
